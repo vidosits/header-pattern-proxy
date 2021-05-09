@@ -4,6 +4,8 @@ type: middleware
 import: github.com/vidosits/header-pattern-proxy
 
 summary: "reverse proxy traffic based on a pattern of a header's value."
+iconPath: images/icon.png
+bannerPath: images/icon.png
 
 testData:
   Header: 'X-Forwarded-User'
