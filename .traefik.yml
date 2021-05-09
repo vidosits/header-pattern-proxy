@@ -1,0 +1,12 @@
+displayName: Header Pattern reverse-proxy
+type: middleware
+
+import: github.com/vidosits/header-pattern-proxy
+
+summary: "reverse proxy traffic based on a pattern of a header's value."
+
+testData:
+  Header: 'X-Forwarded-User'
+  Mapping:
+    user1: 'http://service1'
+    user2: 'http://service2'
