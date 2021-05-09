@@ -79,3 +79,6 @@ or if you're using [devMode](https://doc.traefik.io/traefik-pilot/plugins/plugin
       [http.routers.my-router-name.tls]
         certResolver = "letsencrypt"
 ```
+
+## License
+This software is released under the Apache 2.0 License.
