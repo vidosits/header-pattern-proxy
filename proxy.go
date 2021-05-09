@@ -50,11 +50,6 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 
 func (a *SiteProxy) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 	for pattern, destination := range a.config.Mapping {
-		log.Printf("%v", a.config)
-		log.Printf("%v", a.config.Mapping)
-		log.Printf("%v", a.config.Header)
-		log.Printf("%s", pattern)
-		log.Printf("%s", destination)
 		matched, _ := regexp.MatchString(pattern, req.Header.Get(a.config.Header))
 
 		if matched {
