@@ -15,7 +15,7 @@ Production:
   [experimental.plugins]
     [experimental.plugins.my-plugin-name]
       moduleName = "github.com/vidosits/header-pattern-proxy"
-      version = "v1.0.0"
+      version = "v1.1.0"
 ```
 
 or if you're using [devMode](https://doc.traefik.io/traefik-pilot/plugins/plugin-dev/#developer-mode):

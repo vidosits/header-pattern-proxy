@@ -1,4 +1,4 @@
-displayName: Header Pattern reverse-proxy
+displayName: Header Pattern Reverse-Proxy
 type: middleware
 
 import: github.com/vidosits/header-pattern-proxy

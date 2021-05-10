@@ -4,7 +4,6 @@ package header_pattern_proxy
 import (
 	"context"
 	"fmt"
-	"log"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
@@ -60,12 +59,6 @@ func (a *SiteProxy) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 			}
 
 			proxy := httputil.NewSingleHostReverseProxy(destinationUrl)
-
-			req.URL.Host = destinationUrl.Host
-			req.URL.Scheme = "http"
-			req.Header.Set("X-Forwarded-Host", req.Header.Get("Host"))
-			req.Host = destinationUrl.Host
-
 			proxy.ServeHTTP(rw, req)
 		}
 	}
