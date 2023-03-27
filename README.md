@@ -7,7 +7,7 @@ This middleware can be used to reverse proxy a request based on a headers value,
 ### Static: 
 Production:
 
-```
+```toml
 [pilot]
   token = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
@@ -20,7 +20,7 @@ Production:
 
 or if you're using [devMode](https://doc.traefik.io/traefik-pilot/plugins/plugin-dev/#developer-mode):
 
-```
+```toml
 [pilot]
   token = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   
@@ -34,7 +34,7 @@ or if you're using [devMode](https://doc.traefik.io/traefik-pilot/plugins/plugin
 
 Production:
 
-```
+```toml
 [http]
   [http.middlewares]
     [http.middlewares.my-middleware-name.plugin.my-plugin-name]
@@ -58,7 +58,7 @@ Production:
 
 or if you're using [devMode](https://doc.traefik.io/traefik-pilot/plugins/plugin-dev/#developer-mode):
 
-```
+```toml
 [http]
   [http.middlewares]
     [http.middlewares.my-middleware-name.plugin.dev]
